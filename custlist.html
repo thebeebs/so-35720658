@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+       <button id="start" />
+       <script>
+           document.getElementById("start").onclick = function(){
+               console.log("Trying to access other frame");
+               selectCustomer(cust_cd)
+               
+           }
+           function selectCustomer(cust_cd){               
+               parent.documents.frames.runDetailMain.routeForm.q_cust_no.value = "Hello";               
+           }
+           </script>
+    </body>
+</html>
