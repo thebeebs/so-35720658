@@ -5,11 +5,11 @@
        <script>
            document.getElementById("start").onclick = function(){
                console.log("Trying to access other frame");
-               selectCustomer(cust_cd)
+               selectCustomer("Hello")
                
            }
            function selectCustomer(cust_cd){               
-               parent.documents.frames.runDetailMain.routeForm.q_cust_no.value = "Hello";               
+               parent.documents.frames.runDetailMain.routeForm.q_cust_no.value = cust_cd;               
            }
            </script>
     </body>
